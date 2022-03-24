@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+  font-family: arial;
+  color: white;
+}
+h1 {
+  color: grey;
+  font-family: verdana;
+}
+
+.maindiv {
+  width: 70%;
+  max-width: 500px;
+}
+
+.row {
+  display: flex;
+  flex: 10;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+.left-column {
+  display: flex;
+  flex: 3;
+}
+
+.right-column {
+  display: flex;
+  flex: 7;
+}
+
+.margin-result {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

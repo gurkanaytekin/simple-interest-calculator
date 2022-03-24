@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <head>
+    <title>Any relevant title you want to give</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+            <div>
+                <div class="row">
+                    <div class="left-column">Amount</div>
+                    <div class="right-column"><input type="number"  id="principal"> </div>
+                </div>
+                <div class="row">
+                    <div class="left-column">Rate</div>
+                    <div class="right-column"><input type="number"  id="rate"></div>
+                </div>
+                <div class="row">
+                    <div class="left-column">No. of Years</div>
+                    <div class="right-column"><input type="number"  id="years"></div>
+                </div>
+                <div style="display: flex; flex-direction: row; margin-bottom: 15px;">
+                    <div class="left-column">Select Rate:</div>
+                    <div class="right-column">
+                        <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" onChange="updateRate(this.value)"><span id="rate_val">
+                            10.25
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left-column">Years:</div>
+                    <div class="right-column">
+                        <select id="years">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+           
+            <span id="result">
+
+            </span>
+            <button class="margin-result" onclick="compute()">Compute Interest</button>
+            <div class="row">
+                <div class="left-column">Interest Result:</div>
+                <div class="right-column"><span id="result"></span></div>
+            </div>
+        </div>
+        <footer>
+
+            &#169; This Calculator belongs to Gürkan AYTEKİN
+    
+    
+    </footer>
+    </body>
+</html>
